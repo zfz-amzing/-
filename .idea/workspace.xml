@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b541b2f7-1a00-418e-af66-a194fab31422" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Xiaomi" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YCaPxmrkqH6DaXjdCmCpsDJhZT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java/ssmbuild" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="spring" />
+  </component>
+  <component name="RunManager" selected="JUnit.DaoTest.testConsumerSelectExample">
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zfz.xiaomi.utils.CodeGenerator" />
+      <module name="Xiaomi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zfz.xiaomi.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoTest.testConsumerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Xiaomi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zfz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zfz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.zfz.test.DaoTest" />
+      <option name="METHOD_NAME" value="testConsumerById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoTest.testConsumerInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Xiaomi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zfz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zfz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.zfz.test.DaoTest" />
+      <option name="METHOD_NAME" value="testConsumerInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoTest.testConsumerSelectExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Xiaomi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zfz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zfz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.zfz.test.DaoTest" />
+      <option name="METHOD_NAME" value="testConsumerSelectExample" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DaoTest.testConsumerSelectExample" />
+        <item itemvalue="JUnit.DaoTest.testConsumerById" />
+        <item itemvalue="JUnit.DaoTest.testConsumerInsert" />
+        <item itemvalue="Application.CodeGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b541b2f7-1a00-418e-af66-a194fab31422" name="Default Changelist" comment="" />
+      <created>1582449009677</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582449009677</updated>
+      <workItem from="1582449011024" duration="12266000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="214" key="#Project_Structure" timestamp="1582454850740">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="552" y="214" key="#Project_Structure/0.30.1920.1050@0.30.1920.1050" timestamp="1582454850740" />
+    <state x="713" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1582462179191">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="713" y="256" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1582462179191" />
+    <state x="580" y="233" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582452173522">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="580" y="233" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582452173522" />
+    <state x="785" y="462" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1582452262955">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="785" y="462" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.30.1920.1050@0.30.1920.1050" timestamp="1582452262955" />
+    <state x="740" y="310" key="FileChooserDialogImpl" timestamp="1582459806107">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="740" y="310" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1582459806107" />
+    <state width="1877" height="387" key="GridCell.Tab.0.bottom" timestamp="1582463742614">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="387" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582463742614" />
+    <state width="1877" height="387" key="GridCell.Tab.0.center" timestamp="1582463742614">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="387" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582463742614" />
+    <state width="1877" height="387" key="GridCell.Tab.0.left" timestamp="1582463742614">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="387" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582463742614" />
+    <state width="1877" height="387" key="GridCell.Tab.0.right" timestamp="1582463742614">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="387" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582463742614" />
+    <state x="440" y="130" key="SettingsEditor" timestamp="1582461848788">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="440" y="130" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1582461848788" />
+    <state x="640" y="238" key="spring file set editor" timestamp="1582461846658">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="640" y="238" key="spring file set editor/0.30.1920.1050@0.30.1920.1050" timestamp="1582461846658" />
+  </component>
+</project>
