@@ -315,6 +315,26 @@ public class DaoTest {
 
 首先创建用户相关业务处理类：`com.zfz.xiaomi.service.ConsumerService.java`
 
+```java
+@Service
+public class ConsumerService {
+
+    @Autowired
+    private ConsumerMapper consumerMapper;
+
+    public boolean findConsumerWithUsernameAndPassword(Consumer consumer ){
+        ConsumerExample ce = new ConsumerExample();
+        ce.createCriteria().andUsernameEqualTo(consumer.getUsername()).andPasswordEqualTo(consumer.getPassword());
+        List<Consumer> consumerList = consumerMapper.selectByExample(ce);
+
+        return consumerList != null && consumerList.size() == 1;
+    }
+}
+
+```
+
+
+
 创建用户相关业务的访问接口/控制器：`com.zfz.xiaomi.controller.ConsumerController.java`
 
 针对登录业务进行响应数据封装

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b541b2f7-1a00-418e-af66-a194fab31422" name="Default Changelist" comment="" />
+    <list default="true" id="b541b2f7-1a00-418e-af66-a194fab31422" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/controller/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/ConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zfz/test/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaomi.md" beforeDir="false" afterPath="$PROJECT_DIR$/xiaomi.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +39,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -39,6 +50,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1YCaPxmrkqH6DaXjdCmCpsDJhZT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -54,7 +66,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
-  <component name="RunManager" selected="JUnit.DaoTest.testConsumerSelectExample">
+  <component name="RunManager" selected="JUnit.WebTest.testLogin">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zfz.xiaomi.utils.CodeGenerator" />
       <module name="Xiaomi" />
@@ -116,8 +128,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Xiaomi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zfz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zfz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.zfz.test.WebTest" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebTest.testLogin" />
         <item itemvalue="JUnit.DaoTest.testConsumerSelectExample" />
         <item itemvalue="JUnit.DaoTest.testConsumerById" />
         <item itemvalue="JUnit.DaoTest.testConsumerInsert" />
@@ -135,7 +164,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582449009677</updated>
-      <workItem from="1582449011024" duration="12266000" />
+      <workItem from="1582449011024" duration="12866000" />
+      <workItem from="1582511623747" duration="2717000" />
     </task>
     <servers />
   </component>
@@ -147,6 +177,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="552" y="214" key="#Project_Structure/0.30.1920.1050@0.30.1920.1050" timestamp="1582454850740" />
+    <state x="414" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582514289150">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="414" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582514289150" />
     <state x="713" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1582462179191">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -163,26 +197,30 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="740" y="310" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1582459806107" />
-    <state width="1877" height="387" key="GridCell.Tab.0.bottom" timestamp="1582463742614">
+    <state width="1877" height="387" key="GridCell.Tab.0.bottom" timestamp="1582470243142">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582463742614" />
-    <state width="1877" height="387" key="GridCell.Tab.0.center" timestamp="1582463742614">
+    <state width="1877" height="387" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582470243142" />
+    <state width="1877" height="387" key="GridCell.Tab.0.center" timestamp="1582470243142">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582463742614" />
-    <state width="1877" height="387" key="GridCell.Tab.0.left" timestamp="1582463742614">
+    <state width="1877" height="387" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582470243142" />
+    <state width="1877" height="387" key="GridCell.Tab.0.left" timestamp="1582470243142">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582463742614" />
-    <state width="1877" height="387" key="GridCell.Tab.0.right" timestamp="1582463742614">
+    <state width="1877" height="387" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582470243142" />
+    <state width="1877" height="387" key="GridCell.Tab.0.right" timestamp="1582470243142">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582463742614" />
+    <state width="1877" height="387" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582470243142" />
     <state x="440" y="130" key="SettingsEditor" timestamp="1582461848788">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="440" y="130" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1582461848788" />
+    <state x="640" y="379" key="com.intellij.ide.util.TipDialog" timestamp="1582511663119">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="640" y="379" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582511663119" />
     <state x="640" y="238" key="spring file set editor" timestamp="1582461846658">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
