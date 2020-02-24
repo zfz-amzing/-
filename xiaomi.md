@@ -337,7 +337,139 @@ public class ConsumerService {
 
 创建用户相关业务的访问接口/控制器：`com.zfz.xiaomi.controller.ConsumerController.java`
 
+```java
+@Controller
+@RequestMapping("/consumer")
+public class ConsumerController {
+
+    @Autowired
+    private ConsumerService consumerService;
+
+    @PostMapping("/login/auth")
+    public String login(@RequestParam String username,@RequestParam String password){
+        System.out.println("接收到请求：/consumer/login/auth");
+        System.out.println("账号："+username+"密码："+password);
+        Consumer consumer = new Consumer(username,password);
+        boolean result = consumerService.findConsumerWithUsernameAndPassword(consumer);
+        System.out.println("登录结果: "+ result);
+        return result ? "success" : "error";
+    }
+}
+
+```
+
+
+
 针对登录业务进行响应数据封装
 
 基于web业务的单元测试
+
+```
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = {"classpath:applicationContext.xml", "classpath:springMVC.xml"})
+@WebAppConfiguration
+public class WebTest {
+
+    //声明一个模拟请求的对象
+    private MockMvc mockMvc;
+    //需要一个web容器
+    @Autowired
+    private WebApplicationContext context;
+
+    @Before
+    public  void SetUp(){
+        mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
+    }
+
+    @Test
+    public void testLogin() throws Exception {
+        //发送post请求
+        MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.post("/consumer/login/auth")
+                .param("username", "zfz")
+                .param("password", "123")).andReturn();
+
+        System.out.println(mvcResult.getResponse().getContentAsString());
+    }
+}
+
+```
+
+### (2)相应数据封装
+
+关于数据接口，提供给客户端调用，并且返回符合预期标准的数据访问接口，通常会有如下的要求
+
++ 固定格式的参数，根据需求提供调用接口即可
++ 返回数据-错误码：快捷判断响应结果是否正确的错误标志，HTTP：200 正确；404 未找到资源； 500 服务器内部错误
++ 返回数据-错误描述：针对错误码具体错误信息的描述
++ 返回数据-数据封装：具体包含的一个或者多个数据
+
+在项目中定义工具类型，封装响应数据：`com.zfz.xiaomi.utils.ResponsMessage.java`
+
+```java
+public class ResponseMessage {
+    private  String errorCode;
+    private  String errMsg;
+    private Map<String,Object> objectMap = new HashMap<>();
+
+    public String getErrorCode() {
+        return errorCode;
+    }
+
+    public void setErrorCode(String errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    public String getErrMsg() {
+        return errMsg;
+    }
+
+    public void setErrMsg(String errMsg) {
+        this.errMsg = errMsg;
+    }
+
+    public Map<String, Object> getObjectMap() {
+        return objectMap;
+    }
+
+    public void setObjectMap(Map<String, Object> objectMap) {
+        this.objectMap = objectMap;
+    }
+    
+    public ResponseMessage addObject(String key, Object value){
+        this.objectMap.put(key, value);
+        return this;
+    }
+    
+    //处理成功相应的方法
+    public static ResponseMessage success(){
+        ResponseMessage rm = new ResponseMessage();
+        rm.setErrorCode("100");
+        rm.setErrMsg("处理成功");
+        return rm;
+    }
+    public static ResponseMessage error(){
+        ResponseMessage rm = new ResponseMessage();
+        rm.setErrorCode("200");
+        rm.setErrMsg("处理失败");
+        return rm;
+    }
+    
+}
+```
+
+重构登陆业务
+
+```
+
+    @PostMapping("/login/auth")
+    @ResponseBody //@responseBody注解的作用是将controller的方法返回的对象通过适当的转换器转换为指定的格式之后，写入到response对象的body区，通常用来返回JSON数据或者是XML数据。
+    public ResponseMessage login(@RequestParam String username, @RequestParam String password){
+        System.out.println("接收到请求：/consumer/login/auth");
+        System.out.println("账号："+username+"密码："+password);
+        Consumer consumer = new Consumer(username,password);
+        boolean result = consumerService.findConsumerWithUsernameAndPassword(consumer);
+        System.out.println("登录结果: "+ result);
+        return result ? ResponseMessage.success() : ResponseMessage.error();
+    }
+```
 
