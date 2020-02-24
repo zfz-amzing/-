@@ -198,4 +198,16 @@ public class Goods {
     public void setRemark(String remark) {
         this.remark = remark == null ? null : remark.trim();
     }
+
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", stock=" + stock +
+                ", goodsTypeId=" + goodsTypeId +
+                ", remark='" + remark + '\'' +
+                '}';
+    }
 }

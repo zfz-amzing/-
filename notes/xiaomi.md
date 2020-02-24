@@ -588,3 +588,81 @@ public String register(Consumer consumer){
     </script>
 ```
 
+
+
+## 8、首页数据加载
+
+首页中需要的数据从后台获取并添加
+
++ 商品类型
++ 每种类型下的商品
+
+开发业务处理层
+
++ 商品类型： `com.zfz.xiaomi.service.GoodsTypeService.java`
+
++ 商品：`com.zfz.xiaomi.service.GoodsShippingService.java`
+
+  反例：项目设计时充分考虑不同的代码层、组件模块之间的命名规则和规范。避免出现不同模块、不同代码层出现相同/相似名称的类型，降低代码质量和可读性
+
+![image-20200224185908599](D:\Xiaomi\notes\pic\image-20200224185908599.png)
+
+`GoodsTypeService.java`
+
+```
+@Service
+public class GoodsTypeService {
+
+    @Autowired
+    private GoodsTypeMapper goodsTypeMapper;
+    /**
+     * 查询一级商品类型
+     * @return 返回所有的一级商品类型
+     */
+    public List<GoodsType> findTopLevel(){
+        GoodsTypeExample gte = new GoodsTypeExample();
+        gte.createCriteria().andPidIsNotNull();
+        return goodsTypeMapper.selectByExample(gte);
+    }
+
+    /**
+     * 查询二级商品类型
+     * @param top 一级商品类型
+     * @return 返回对应的二级商品类型
+     */
+    public List<GoodsType> findSecondLevel(GoodsType top){
+        GoodsTypeExample gte = new GoodsTypeExample();
+        gte.createCriteria().andPidEqualTo(top.getId());
+        return goodsTypeMapper.selectByExample(gte);
+    }
+}
+
+```
+
+`GoodsShippingService.java`
+
+```
+@Service
+public class GoodsShippingService {
+    
+    @Autowired
+    private GoodsMapper goodsMapper;
+
+    /**
+     * 根据商品类型查询商品
+     * @param goodsType 商品类型
+     * @return 属于指定商品类型的所有商品
+     */
+    public List<Goods> findGoodsWithType(GoodsType goodsType){
+        GoodsExample ge = new GoodsExample();
+        ge.createCriteria().andGoodsTypeIdEqualTo(goodsType.getId());
+        return goodsMapper.selectByExample(ge);
+    }
+}
+```
+
+开发首页控制器`com.zfz.xiaomi.controller.IndexController.java`
+
++ initIndex(..):加载首页数据的控制器方法，前端网页中通过JQuery Ajax请求获取数据
+
+开发首页视图：`/web/index.jsp`渲染展示商品
