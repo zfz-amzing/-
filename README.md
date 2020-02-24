@@ -8,3 +8,7 @@
 
 1. 登陆业务完成  web测试成功
 2. 封装响应数据：`com.zfz.xiaomi.utils.ResponsMessage.java`  重构了登陆业务以json返回
+
+## 注册业务
+
+注册业务完成

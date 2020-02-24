@@ -21,4 +21,15 @@ public class ConsumerService {
 
         return consumerList != null && consumerList.size() == 1;
     }
+    public String register(Consumer consumer){
+        //验证用户名是否存在
+        ConsumerExample ce = new ConsumerExample();
+        ce.createCriteria().andUsernameEqualTo(consumer.getUsername());
+
+        List<Consumer> consumerList = consumerMapper.selectByExample(ce);
+        if(consumerList.size() > 0){
+            return "注册失败，用户名已存在";
+        }
+        return "注册成功";
+    }
 }

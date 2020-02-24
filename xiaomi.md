@@ -305,7 +305,7 @@ public class DaoTest {
 
 
 
-## 5\业务模型开发&封装响应
+## 5、业务模型开发&封装响应
 
 从业务模型处理>>复杂业务模型操作
 
@@ -471,5 +471,120 @@ public class ResponseMessage {
         System.out.println("登录结果: "+ result);
         return result ? ResponseMessage.success() : ResponseMessage.error();
     }
+```
+
+## 6、登录
+
+```
+    <script>
+        $(function() {
+           // 点击登录按钮时，发送ajax请求
+           $("#login-btn").click(function() {
+               // 发送ajax请求
+               $.ajax({
+                   url: "/xiaomi/consumer/login/auth",
+                   method: "post",
+                   data: {
+                       "username": $("#username").val(),
+                       "password": $("#password").val()
+                   },
+                   success:function(response) {
+                       console.log("请求发送成功");
+                       console.log(response);
+                       if(response.errorCode === "100") {
+                           // 登录成功
+                           alert("用户登录成功！");
+                           window.location = "/xiaomi/index.jsp";
+                       } else {
+                           // 登录失败
+                           $("#error-username").text("账号或者密码有误，请重新登录").css({"color": "red"});
+                       }
+                   },
+                   error: function() {
+                       console.log("请求发送失败..");
+
+                   }
+               });
+           });
+        });
+    </script>
+```
+
+## 7、用户注册
+
+业务层：`com.zfz.xiaomi.service.ConsumerService.java`
+
+​	添加注册方法：`register()`
+
+```
+public String register(Consumer consumer){
+        //验证用户名是否存在
+        ConsumerExample ce = new ConsumerExample();
+        ce.createCriteria().andUsernameEqualTo(consumer.getUsername());
+
+        List<Consumer> consumerList = consumerMapper.selectByExample(ce);
+        if(consumerList.size() > 0){
+            return "注册失败，用户名已存在";
+        }
+        return "注册成功";
+    }
+```
+
+
+
+业务层：`com.zfz.xiaomi.service.ConsumerController.java`
+
+​	添加注册方法：`register()`
+
+```
+  @PostMapping(value = "/register",produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public ResponseMessage register(@RequestParam String username, @RequestParam String password){
+        Consumer consumer = new Consumer(username,password);
+        String result = consumerService.register(consumer);
+        //判断结果
+        if (result.contains("注册成功")){
+            return  ResponseMessage.success();
+        }
+        return ResponseMessage.error().addObject("msg",result);
+
+    }
+```
+
+
+
+网页视图及功能完善
+
+`web/register.jsp`+'jquery'脚本
+
+```
+<script src="js/jquery/jquery-3.4.1.js"></script>
+    <script>
+        $(function() {
+            // 点击注册按钮时，发送请求
+            $("#register-btn").click(function() {
+                // 发送Ajax请求
+                $.ajax({
+                    url: "/xiaomi/consumer/register",
+                    method: "POST",
+                    data: {
+                        "username": $("#username").val(),
+                        "password": $("#password").val()
+                    },
+                    success: function(response) {
+                        if(response.errorCode === "100") {
+                            alert("Congratulations，账号注册成功，请登录吧");
+                            window.location = "/xiaomi/login.jsp";
+                        }else{
+                            $("#errorMsg").text(response.objectMap.msg).css({"color": "red"});
+                        }
+                    },
+                    error: function() {
+                        $("#errorMsg").text("请求迷路了，小二正在赶来的路上，请稍后再试..").css({"color": "red"});
+                    }
+                });
+            });
+        });
+    </script>
 ```
 

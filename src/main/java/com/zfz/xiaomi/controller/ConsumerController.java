@@ -28,4 +28,17 @@ public class ConsumerController {
         System.out.println("登录结果: "+ result);
         return result ? ResponseMessage.success() : ResponseMessage.error();
     }
+
+    @PostMapping(value = "/register",produces = {"application/json;charset=UTF-8"})
+    @ResponseBody
+    public ResponseMessage register(@RequestParam String username, @RequestParam String password){
+        Consumer consumer = new Consumer(username,password);
+        String result = consumerService.register(consumer);
+        //判断结果
+        if (result.contains("注册成功")){
+            return  ResponseMessage.success();
+        }
+        return ResponseMessage.error().addObject("msg",result);
+
+    }
 }
