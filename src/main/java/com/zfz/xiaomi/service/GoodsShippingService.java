@@ -25,4 +25,15 @@ public class GoodsShippingService {
         ge.createCriteria().andGoodsTypeIdEqualTo(goodsType.getId());
         return goodsMapper.selectByExample(ge);
     }
+
+    /**
+     * 根据名称模糊搜索商品数据
+     * @param name 商品名称
+     * @return 返回符合条件的商品
+     */
+    public List<Goods> searchGoodsWithName(String name ){
+        GoodsExample ge = new GoodsExample();
+        ge.createCriteria().andNameLike("%" + name + "%");
+        return goodsMapper.selectByExample(ge);
+    }
 }

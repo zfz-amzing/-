@@ -728,3 +728,62 @@ private List<GoodsImages> goodsImages;
 + initIndex(..):加载首页数据的控制器方法，前端网页中通过JQuery Ajax请求获取数据
 
 开发首页视图：`/web/index.jsp`渲染展示商品
+
+## 9、商品搜索
+
+基本搜索功能，直接和数据库交互，通过sql语句完成商品数据的检索
+企业项目需要的搜索功能，很少会直接和数据库进行交互，一般情况下会使用数据中间件框架`elasticesearch`
+
+### （1）、商品按名称模糊搜索
+
+业务层方法开发：`com.zfz.xiaomi.service.GoodsShipService.java`
+
+```
+  /**
+     * 根据名称模糊搜索商品数据
+     * @param name 商品名称
+     * @return 返回符合条件的商品
+     */
+    public List<Goods> searchGoodsWithName(String name ){
+        GoodsExample ge = new GoodsExample();
+        ge.createCriteria().andNameLike("%" + name + "%");
+        return goodsMapper.selectByExample(ge);
+    }
+```
+
+控制层方法`com.zfz.xiaomi.controller.UtilsController.java`
+
+```
+    @GetMapping("/search/{name}")
+    @ResponseBody
+    private ResponseMessage searchGoodsWithName(@PathVariable String name){
+        List<Goods> goodsList = goodsShippingService.searchGoodsWithName(name);
+        return goodsList.size() > 0 ? ResponseMessage.success().addObject("goodsList", goodsList)
+                                    : ResponseMessage.error();
+    }
+```
+
+单元测试
+
+```
+ @Test
+    public void testSearchGoods(){
+        List<Goods> goodsList = goodsShippingService.searchGoodsWithName("小米");
+        goodsList.forEach(goods -> System.out.println(goods));
+    }
+```
+
+网页视图开发
+
+```
+    <!-- 搜索框 index.jsp-->
+    <form action="#" id="search">
+        <input type="text">
+        <button></button>
+    </form>
+```
+
+
+
+### （2）、商品按类型检索
+

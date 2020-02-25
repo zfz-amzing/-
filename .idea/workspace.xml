@@ -7,63 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b541b2f7-1a00-418e-af66-a194fab31422" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/10_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/10_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/11_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/11_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/12_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/12_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/13_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/13_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/14_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/14_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/15_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/15_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/16_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/16_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/17_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/17_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/18_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/18_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/19_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/19_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/1_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/1_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/20_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/20_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/21_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/21_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/22_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/22_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/23_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/23_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/24_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/24_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/25_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/25_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/26_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/26_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/27_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/27_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/28_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/28_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/2_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/2_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/3_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/3_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/4_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/4_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/5_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/5_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/6_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/6_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/8_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/8_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/9_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/9_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/9_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/images/goodsImage/9_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/controller/UtilsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/goodslist.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/xiaomi.md" beforeDir="false" afterPath="$PROJECT_DIR$/notes/xiaomi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Xiaomi_Web_exploded/WEB-INF/classes/com/zfz/xiaomi/service/GoodsShippingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Xiaomi_Web_exploded/WEB-INF/classes/com/zfz/xiaomi/service/GoodsShippingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/GoodsShippingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/GoodsShippingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zfz/test/DaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zfz/test/DaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zfz/xiaomi/service/GoodsShippingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zfz/xiaomi/service/GoodsShippingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zfz/test/DaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zfz/test/DaoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +74,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -130,24 +82,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Xiaomi\web\static\images" />
       <recent name="D:\Xiaomi\web" />
+      <recent name="D:\Xiaomi\web\WEB-INF" />
+      <recent name="D:\Xiaomi\web\static\images" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5">
-    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zfz.xiaomi.utils.CodeGenerator" />
-      <module name="Xiaomi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zfz.xiaomi.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DaoTest.testConsumerById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Xiaomi" />
       <extension name="coverage">
@@ -191,6 +131,22 @@
       <option name="PACKAGE_NAME" value="com.zfz.test" />
       <option name="MAIN_CLASS_NAME" value="com.zfz.test.DaoTest" />
       <option name="METHOD_NAME" value="testConsumerSelectExample" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoTest.testSearchGoods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Xiaomi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zfz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zfz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.zfz.test.DaoTest" />
+      <option name="METHOD_NAME" value="testSearchGoods" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -288,20 +244,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CodeGenerator" />
       <item itemvalue="JUnit.DaoTest.testConsumerById" />
       <item itemvalue="JUnit.DaoTest.testConsumerInsert" />
       <item itemvalue="JUnit.DaoTest.testConsumerSelectExample" />
       <item itemvalue="JUnit.WebTest.testLogin" />
+      <item itemvalue="JUnit.DaoTest.testSearchGoods" />
       <item itemvalue="Tomcat Server.Tomcat 8.5" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DaoTest.testSearchGoods" />
         <item itemvalue="JUnit.WebTest.testLogin" />
         <item itemvalue="JUnit.DaoTest.testConsumerSelectExample" />
         <item itemvalue="JUnit.DaoTest.testConsumerById" />
         <item itemvalue="JUnit.DaoTest.testConsumerInsert" />
-        <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -343,7 +299,8 @@
       <workItem from="1582526392423" duration="1492000" />
       <workItem from="1582529081719" duration="20326000" />
       <workItem from="1582611447531" duration="1198000" />
-      <workItem from="1582612671552" duration="372000" />
+      <workItem from="1582612671552" duration="3101000" />
+      <workItem from="1582617035022" duration="1139000" />
     </task>
     <servers />
   </component>
@@ -379,54 +336,54 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="740" y="310" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1582542387629" />
-    <state width="1545" height="215" key="GridCell.Tab.0.bottom" timestamp="1582612645880">
+    <state width="1877" height="319" key="GridCell.Tab.0.bottom" timestamp="1582617007585">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645880" />
-    <state width="1545" height="215" key="GridCell.Tab.0.center" timestamp="1582612645880">
+    <state width="1877" height="319" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007585" />
+    <state width="1877" height="319" key="GridCell.Tab.0.center" timestamp="1582617007585">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645880" />
-    <state width="1545" height="215" key="GridCell.Tab.0.left" timestamp="1582612645880">
+    <state width="1877" height="319" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007585" />
+    <state width="1877" height="319" key="GridCell.Tab.0.left" timestamp="1582617007585">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645880" />
-    <state width="1545" height="215" key="GridCell.Tab.0.right" timestamp="1582612645880">
+    <state width="1877" height="319" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007585" />
+    <state width="1877" height="319" key="GridCell.Tab.0.right" timestamp="1582617007585">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645880" />
-    <state width="1545" height="215" key="GridCell.Tab.1.bottom" timestamp="1582612645881">
+    <state width="1877" height="319" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007585" />
+    <state width="1545" height="215" key="GridCell.Tab.1.bottom" timestamp="1582617007582">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.1.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645881" />
-    <state width="1545" height="215" key="GridCell.Tab.1.center" timestamp="1582612645881">
+    <state width="1545" height="215" key="GridCell.Tab.1.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007582" />
+    <state width="1545" height="215" key="GridCell.Tab.1.center" timestamp="1582617007582">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.1.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645881" />
-    <state width="1545" height="215" key="GridCell.Tab.1.left" timestamp="1582612645880">
+    <state width="1545" height="215" key="GridCell.Tab.1.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007582" />
+    <state width="1545" height="215" key="GridCell.Tab.1.left" timestamp="1582617007582">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.1.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645880" />
-    <state width="1545" height="215" key="GridCell.Tab.1.right" timestamp="1582612645881">
+    <state width="1545" height="215" key="GridCell.Tab.1.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007582" />
+    <state width="1545" height="215" key="GridCell.Tab.1.right" timestamp="1582617007582">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.1.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645881" />
-    <state width="1545" height="215" key="GridCell.Tab.2.bottom" timestamp="1582612645881">
+    <state width="1545" height="215" key="GridCell.Tab.1.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007582" />
+    <state width="1545" height="215" key="GridCell.Tab.2.bottom" timestamp="1582617007583">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.2.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645881" />
-    <state width="1545" height="215" key="GridCell.Tab.2.center" timestamp="1582612645881">
+    <state width="1545" height="215" key="GridCell.Tab.2.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007583" />
+    <state width="1545" height="215" key="GridCell.Tab.2.center" timestamp="1582617007582">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.2.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645881" />
-    <state width="1545" height="215" key="GridCell.Tab.2.left" timestamp="1582612645881">
+    <state width="1545" height="215" key="GridCell.Tab.2.center/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007582" />
+    <state width="1545" height="215" key="GridCell.Tab.2.left" timestamp="1582617007582">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.2.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645881" />
-    <state width="1545" height="215" key="GridCell.Tab.2.right" timestamp="1582612645881">
+    <state width="1545" height="215" key="GridCell.Tab.2.left/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007582" />
+    <state width="1545" height="215" key="GridCell.Tab.2.right" timestamp="1582617007582">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1545" height="215" key="GridCell.Tab.2.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582612645881" />
+    <state width="1545" height="215" key="GridCell.Tab.2.right/0.30.1920.1050@0.30.1920.1050" timestamp="1582617007582" />
     <state width="1545" height="298" key="GridCell.Tab.3.bottom" timestamp="1582545688656">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -447,10 +404,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="440" y="130" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1582524177317" />
-    <state x="640" y="379" key="com.intellij.ide.util.TipDialog" timestamp="1582612672784">
+    <state x="640" y="379" key="com.intellij.ide.util.TipDialog" timestamp="1582617169627">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="640" y="379" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582612672784" />
+    <state x="640" y="379" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582617169627" />
     <state x="640" y="238" key="spring file set editor" timestamp="1582461846658">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

@@ -20,3 +20,9 @@
 完善了首页数据，改造Goods类以及goodsMap.xml使其能够查询到图片位置
 
 修改了图片资源，使首页能够正常显示商品图片
+
+## 首页搜索功能
+
+后端 增加service层和controller层
+
+前端增加goodslist.jsp

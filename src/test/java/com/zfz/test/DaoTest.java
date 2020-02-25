@@ -3,6 +3,8 @@ package com.zfz.test;
 import com.zfz.xiaomi.dao.ConsumerMapper;
 import com.zfz.xiaomi.entry.Consumer;
 import com.zfz.xiaomi.entry.ConsumerExample;
+import com.zfz.xiaomi.entry.Goods;
+import com.zfz.xiaomi.service.GoodsShippingService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,9 @@ import java.util.List;
 public class DaoTest {
     @Autowired
     private ConsumerMapper consumerMapper;
+
+    @Autowired
+    private GoodsShippingService goodsShippingService;
 
     @Test
     public void testConsumerInsert(){
@@ -39,5 +44,11 @@ public class DaoTest {
         for (Consumer consumer : consumers){
             System.out.println(consumer);
         }
+    }
+
+    @Test
+    public void testSearchGoods(){
+        List<Goods> goodsList = goodsShippingService.searchGoodsWithName("小米");
+        goodsList.forEach(goods -> System.out.println(goods));
     }
 }
