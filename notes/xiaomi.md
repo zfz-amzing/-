@@ -787,3 +787,64 @@ private List<GoodsImages> goodsImages;
 
 ### （2）、商品按类型检索
 
+一级类型查看
+
+  首页导>>根据一级类型查看所有商品
+
+业务层：`com.zfz.xiaomi.service.GoodsShippingService`
+
+```
+    /**
+     * 根据二级类型查询商品数据
+     * @param goodsType 一级类型
+     * @return 返回所有商品
+     */
+    public List<Goods> findGoodsWithTopType(GoodsType goodsType){
+        //查询一级类型下的所有二级类型
+        List<GoodsType> gt = goodsTypeService.findSecondLevel(goodsType);
+        //查询所有二级类型下所有商品
+        List<Goods> goodsList = new ArrayList<>();
+        for (GoodsType goodsType1 : gt){
+            List<Goods> goodses = this.findGoodsWithType(goodsType1);
+            goodsList.addAll(goodses);
+        }
+        return goodsList;
+    }
+```
+
+
+
+控制层：`com.zfz.xiaomi.controller.UtilsController`
+
+```
+/**
+     * 根据类型查看商品
+     * @param level level 类型级别 1一级类型 2 二级类型
+     * @param goodTypeId 类型编号
+     * @return 返回响应数据
+     */
+    @GetMapping("search/{level}/{gtId}")
+    public ResponseMessage searchGoodsWithType(@PathVariable Integer level, @PathVariable Integer goodTypeId){
+
+        GoodsType goodsType = goodsTypeService.findById(goodTypeId);
+        List<Goods> goodsList = null;
+        if (level == 1){
+            goodsList = goodsShippingService.findGoodsWithTopType(goodsType);
+        } else if (level == 2){
+            goodsList = goodsShippingService.findGoodsWithType(goodsType);
+        }
+        return goodsList != null && goodsList.size() > 0
+                ? ResponseMessage.success().addObject("goodsList", goodsList)
+                : ResponseMessage.error();
+    }
+```
+
+视图处理`web/goodslist2.jsp`
+
++ `index.jsp` 导航发起
++ 跳转到指定页面`goodslist2.jsp`
++ 在商品列表页面中，获取查询参数，发送请求获取数据
+
+二级类型查看
+
+  楼层商品>>根据二级类型查看更多

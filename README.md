@@ -26,3 +26,5 @@
 后端 增加service层和controller层
 
 前端增加goodslist.jsp
+
+根据商品类型检索完成，前端增加goodslist2.jsp

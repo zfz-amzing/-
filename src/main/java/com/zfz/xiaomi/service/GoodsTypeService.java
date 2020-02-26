@@ -36,4 +36,13 @@ public class GoodsTypeService {
         gte.createCriteria().andPidEqualTo(top.getId());
         return goodsTypeMapper.selectByExample(gte);
     }
+
+    /**
+     *  根据主键编号查询一个类型
+     * @param goodTypeId 主键编号
+     * @return 商品类型
+     */
+    public GoodsType findById(Integer goodTypeId) {
+        return goodsTypeMapper.selectByPrimaryKey(goodTypeId);
+    }
 }
