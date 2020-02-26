@@ -242,14 +242,14 @@
                 method: "GET",
                 success: function(response) {
                     if(response.errorCode === "100" ) {
-                        alert("Congratulations, 商品成功加入购物车")
+                        alert("商品成功加入购物车")
                     } else {
                         alert("商品加入购物车失败，请稍后再试..")
                     }
                 },
                 error: function() {
                     console.log("请求走丢了...");
-                    alert("服务器繁忙，小二正在维护的路上，请稍后再试...")
+                    alert("服务器繁忙，请稍后再试...")
                 }
             });
         });

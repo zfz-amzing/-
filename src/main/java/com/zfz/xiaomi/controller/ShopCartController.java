@@ -53,6 +53,7 @@ public class ShopCartController {
      * @return 成功或失败
      */
     @GetMapping("/remove/{goodsId}")
+    @ResponseBody
     public ResponseMessage removeGoodsToCart(@PathVariable Integer goodsId, HttpSession session){
         //获取当前用户
         Consumer consumer = (Consumer) session.getAttribute("loginConsumer");
@@ -64,6 +65,7 @@ public class ShopCartController {
 
     }
     @GetMapping("/chk")
+    @ResponseBody
     public ResponseMessage findAllWithConsumer(HttpSession session){
         //获取当前用户
         Consumer consumer = (Consumer) session.getAttribute("loginConsumer");

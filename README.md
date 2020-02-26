@@ -34,3 +34,7 @@
 后端查询商品详细信息
 
 前端增加detail.jsp 可再index.jsp和goodslist.jsp跳转到商品详情页
+
+## 购物车
+
+添加到购物车 购物车页面
