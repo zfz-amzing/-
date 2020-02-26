@@ -28,3 +28,9 @@
 前端增加goodslist.jsp
 
 根据商品类型检索完成，前端增加goodslist2.jsp
+
+## 商品细节展示
+
+后端查询商品详细信息
+
+前端增加detail.jsp 可再index.jsp和goodslist.jsp跳转到商品详情页

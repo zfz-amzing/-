@@ -57,4 +57,13 @@ public class GoodsShippingService {
         ge.createCriteria().andNameLike("%" + name + "%");
         return goodsMapper.selectByExample(ge);
     }
+
+    /**
+     * 根据id查询商品
+     * @param id 商品的id
+     * @return 查询到的商品
+     */
+    public Goods findGoodWithId(Integer id){
+        return goodsMapper.selectByPrimaryKey(id);
+    }
 }

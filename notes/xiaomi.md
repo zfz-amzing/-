@@ -848,3 +848,41 @@ private List<GoodsImages> goodsImages;
 二级类型查看
 
   楼层商品>>根据二级类型查看更多
+
+## 10、商品详情处理
+
+业务模型处理方法：`com.zfz.xiaomi.service.GoodsShippingService.java`
+开发业务层处理方法：`findGoodsWithId(..)`，完善对应的`GoodsMapper.xml`
+
+```
+/**
+     * 根据id查询商品
+     * @param id 商品的id 
+     * @return 查询到的商品
+     */
+    public Goods findGoodWithId(Integer id){
+        return goodsMapper.selectByPrimaryKey(id);
+    }
+```
+
+商品详情控制器接口开发：`com.zfz.xiaomi.controller.GoodsController.java`
+
+```
+@Controller
+@RequestMapping("/goods")
+public class GoodsController {
+    
+    @Autowired
+    private GoodsShippingService goodsShippingService;
+    
+    @GetMapping("/detail/{gid}")
+    @ResponseBody
+    public ResponseMessage findGoodsWithId(@PathVariable Integer gid){
+        Goods goods = goodsShippingService.findGoodWithId(gid);
+        return ResponseMessage.success().addObject("goods",goods);
+    }
+}
+```
+
+网页试图处理：‘web/detail.jsp’
+跳转`index.jsp||goodslist.jsp>>detail.jsp?gid=***`发送Ajax请求获取对应的商品信息
