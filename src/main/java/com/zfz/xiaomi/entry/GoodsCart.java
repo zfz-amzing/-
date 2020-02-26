@@ -200,4 +200,12 @@ public class GoodsCart {
     public void setConsumerId(Integer consumerId) {
         this.consumerId = consumerId;
     }
+
+    public GoodsCart(Integer goodsId, Integer buyCount, Date addDate, Double subtotal, Integer consumerId) {
+        this.goodsId = goodsId;
+        this.buyCount = buyCount;
+        this.addDate = addDate;
+        this.subtotal = subtotal;
+        this.consumerId = consumerId;
+    }
 }

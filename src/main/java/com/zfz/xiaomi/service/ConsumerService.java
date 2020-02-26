@@ -14,12 +14,12 @@ public class ConsumerService {
     @Autowired
     private ConsumerMapper consumerMapper;
 
-    public boolean findConsumerWithUsernameAndPassword(Consumer consumer ){
+    public Consumer findConsumerWithUsernameAndPassword(Consumer consumer ){
         ConsumerExample ce = new ConsumerExample();
         ce.createCriteria().andUsernameEqualTo(consumer.getUsername()).andPasswordEqualTo(consumer.getPassword());
         List<Consumer> consumerList = consumerMapper.selectByExample(ce);
 
-        return consumerList != null && consumerList.size() == 1;
+        return consumerList != null && consumerList.size() == 1 ? consumerList.get(0) : null;
     }
     public String register(Consumer consumer){
         //验证用户名是否存在

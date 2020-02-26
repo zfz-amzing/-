@@ -886,3 +886,181 @@ public class GoodsController {
 
 网页试图处理：‘web/detail.jsp’
 跳转`index.jsp||goodslist.jsp>>detail.jsp?gid=***`发送Ajax请求获取对应的商品信息
+
+## 11、购物车
+
+商品加入购物车
+
+`detail.jsp`商品详情页>>加入购物车>>加入购物车流程
+
+业务处理层：`com.damu.xiaomi.service.ShopCartService.java`
+
+```
+public class ShopCartService {
+
+    @Autowired
+    private GoodsCartMapper goodsCartMapper;
+
+    /**
+     * 判断某个商品在购物车中是否存在
+     * @param consumer 指定用户
+     * @param goods 指定商品
+     * @return
+     */
+    private List<GoodsCart> checkGoods(Consumer consumer, Goods goods){
+        //查询指定的商品在当前用户的购物车中是否存在
+        GoodsCartExample gce = new GoodsCartExample();
+        gce.createCriteria().andConsumerIdEqualTo(consumer.getId()).andGoodsIdEqualTo(goods.getId());
+        //查询操作
+        List<GoodsCart> cartList = goodsCartMapper.selectByExample(gce);
+        return  cartList;
+    }
+    
+    /**
+     * 指定商品加入购物车
+     * @param goods 要加入购物车的商品
+     * @return 返回加入结果
+     */
+    public boolean addGoodsToShopCart(Consumer consumer,Goods goods){
+        List <GoodsCart> cartList = this.checkGoods(consumer, goods);
+        if (cartList.size() > 0){
+            //更新购买数量
+            int count = cartList.get(0).getBuyCount();
+            cartList.get(0).setBuyCount(count + 1);
+            //更新小计金额
+            double totalPrice = cartList.get(0).getSubtotal()/count * cartList.get(0).getBuyCount();
+            cartList.get(0).setSubtotal(totalPrice);
+        }else {
+            //新增商品
+            GoodsCart goodsCart = new GoodsCart(goods.getId(),1,new Date(), goods.getPrice(), consumer.getId());
+            goodsCartMapper.insertSelective(goodsCart);
+        }
+        return true;
+    }
+
+    /**
+     * 从购物车中删除商品
+     * @param goods 要删除的商品
+     * @return 返回删除结果
+     */
+    public boolean removeGoodsFromShopCart(Consumer consumer,Goods goods){
+        List<GoodsCart> cartList = this.checkGoods(consumer, goods);
+        if (cartList.size() > 0){
+            goodsCartMapper.deleteByPrimaryKey(cartList.get(0).getId());
+            return true;
+        }
+        System.out.println("商品不存在");
+        return false;
+    }
+
+    /**
+     * 查询指定用户购物车中的所有商品
+     * @param consumer 指定用户
+     * @return 返回该用户购物车的所有商品
+     */
+    public List<GoodsCart> findAllGoodsCartWithConsumer(Consumer consumer){
+        GoodsCartExample gce = new GoodsCartExample();
+        gce.createCriteria().andConsumerIdEqualTo(consumer.getId());
+        return goodsCartMapper.selectByExample(gce);
+    }
+    
+    
+}
+
+```
+
+
+
+重构登陆业务`com.zfz.xiaomi.controller.ConsumerCroller.java`
+
+1. 验证密码＋账号
+2. 登记用户 --  会话跟踪【session】
+
+```
+    @PostMapping(value = "/login/auth",produces = {"application/json;charset=UTF-8"})
+    @ResponseBody //@responseBody注解的作用是将controller的方法返回的对象通过适当的转换器转换为指定的格式之后，写入到response对象的body区，通常用来返回JSON数据或者是XML数据。
+    public ResponseMessage login(@RequestParam String username, @RequestParam String password,
+                                 HttpSession session){
+        System.out.println("接收到请求：/consumer/login/auth");
+        System.out.println("账号："+username+"密码："+password);
+        Consumer consumer = new Consumer(username,password);
+        consumer = consumerService.findConsumerWithUsernameAndPassword(consumer);
+        System.out.println("登录结果: "+ consumer);
+        //记录登录用户
+        session.setAttribute("loginConsumer", consumer);
+        return consumer != null  ? ResponseMessage.success() : ResponseMessage.error();
+    }
+```
+
+
+
+控制层：`com.zfz.xiaomi.controller.ShopCartController.java`
+
+```
+@Controller
+@RequestMapping("/shopcart")
+public class ShopCartController {
+
+    @Autowired
+    private ShopCartService shopCartService;
+    @Autowired
+    private GoodsShippingService goodsShippingService;
+
+
+    /**
+     * 商品加入购物车
+      * @param goodsId 商品id
+     * @param session session中携带consumer信息
+     * @return 成功或失败
+     */
+    @GetMapping("/add/{goodsId}")
+    @ResponseBody
+    public ResponseMessage addGoodsToCart(@PathVariable Integer goodsId, HttpSession session){
+        //获取当前用户
+        Consumer consumer = (Consumer) session.getAttribute("loginConsumer");
+        if (consumer == null)
+            return ResponseMessage.error();
+
+        //加入商品到购物车
+        Goods goods = goodsShippingService.findGoodWithId(goodsId);
+        shopCartService.addGoodsToShopCart(consumer,goods);
+        return ResponseMessage.success();
+    }
+
+    /**
+     * 从购物车中删除指定商品
+     * @param goodsId 商品id
+     * @param session session中携带consumer信息
+     * @return 成功或失败
+     */
+    @GetMapping("/remove/{goodsId}")
+    public ResponseMessage removeGoodsToCart(@PathVariable Integer goodsId, HttpSession session){
+        //获取当前用户
+        Consumer consumer = (Consumer) session.getAttribute("loginConsumer");
+        if (consumer == null)
+            return ResponseMessage.error();
+        Goods goods = goodsShippingService.findGoodWithId(goodsId);
+        shopCartService.removeGoodsFromShopCart(consumer,goods);
+        return ResponseMessage.success();
+
+    }
+    @GetMapping("/chk")
+    public ResponseMessage findAllWithConsumer(HttpSession session){
+        //获取当前用户
+        Consumer consumer = (Consumer) session.getAttribute("loginConsumer");
+        if (consumer == null)
+            return ResponseMessage.error();
+        List<GoodsCart> cartList = shopCartService.findAllGoodsCartWithConsumer(consumer);
+        return ResponseMessage.success().addObject("cartList",cartList);
+    }
+}
+```
+
+
+
+网页视图处理
+
+- 添加商品到购物车的操作：详情页完成
+- 查看购物车商品：购物车页面
+- 从购物车中删除对应的商品：购物车页面
+

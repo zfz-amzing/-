@@ -7,14 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b541b2f7-1a00-418e-af66-a194fab31422" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/controller/ShopCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/ShopCartService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/xiaomi.md" beforeDir="false" afterPath="$PROJECT_DIR$/notes/xiaomi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Xiaomi_Web_exploded/WEB-INF/classes/com/zfz/xiaomi/service/GoodsShippingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Xiaomi_Web_exploded/WEB-INF/classes/com/zfz/xiaomi/service/GoodsShippingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Xiaomi_Web_exploded/WEB-INF/classes/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Xiaomi_Web_exploded/WEB-INF/classes/mapper/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/GoodsShippingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/GoodsShippingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zfz/xiaomi/service/GoodsShippingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zfz/xiaomi/service/GoodsShippingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/controller/ConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/controller/ConsumerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/entry/GoodsCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/entry/GoodsCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/ConsumerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +302,7 @@
       <workItem from="1582686355132" duration="1582000" />
       <workItem from="1582688351857" duration="2141000" />
       <workItem from="1582690525328" duration="3713000" />
-      <workItem from="1582697810996" duration="1445000" />
+      <workItem from="1582697810996" duration="8118000" />
     </task>
     <servers />
   </component>
@@ -319,10 +318,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="414" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582523961080" />
-    <state x="713" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1582550466928">
+    <state x="713" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1582702260129">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="713" y="256" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1582550466928" />
+    <state x="713" y="256" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1582702260129" />
     <state x="580" y="233" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582452173522">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
