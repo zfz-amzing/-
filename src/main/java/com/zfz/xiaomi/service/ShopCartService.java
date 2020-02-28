@@ -29,7 +29,7 @@ public class ShopCartService {
         GoodsCartExample gce = new GoodsCartExample();
         gce.createCriteria().andConsumerIdEqualTo(consumer.getId()).andGoodsIdEqualTo(goods.getId());
         //查询操作
-        List<GoodsCart> cartList = goodsCartMapper.selectByExample(gce);
+        List<GoodsCart> cartList = goodsCartMapper.selectByExampleNoImages(gce);
         return  cartList;
     }
 

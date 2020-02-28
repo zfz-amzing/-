@@ -8,9 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b541b2f7-1a00-418e-af66-a194fab31422" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/controller/ConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/controller/ConsumerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/ConsumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/dao/GoodsCartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/dao/GoodsCartMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/ShopCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zfz/xiaomi/service/ShopCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodsCartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsCartMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,6 +302,7 @@
       <workItem from="1582697810996" duration="9067000" />
       <workItem from="1582712555605" duration="5512000" />
       <workItem from="1582858139211" duration="2600000" />
+      <workItem from="1582871847757" duration="242000" />
     </task>
     <servers />
   </component>
@@ -405,10 +406,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="440" y="130" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1582524177317" />
-    <state x="640" y="379" key="com.intellij.ide.util.TipDialog" timestamp="1582858149230">
+    <state x="640" y="379" key="com.intellij.ide.util.TipDialog" timestamp="1582871847218">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="640" y="379" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582858149230" />
+    <state x="640" y="379" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1582871847218" />
     <state x="640" y="238" key="spring file set editor" timestamp="1582461846658">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
