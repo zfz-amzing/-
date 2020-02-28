@@ -24,11 +24,11 @@ public class ConsumerController {
     @ResponseBody //@responseBody注解的作用是将controller的方法返回的对象通过适当的转换器转换为指定的格式之后，写入到response对象的body区，通常用来返回JSON数据或者是XML数据。
     public ResponseMessage login(@RequestParam String username, @RequestParam String password,
                                  HttpSession session){
-        System.out.println("接收到请求：/consumer/login/auth");
-        System.out.println("账号："+username+"密码："+password);
+        //System.out.println("接收到请求：/consumer/login/auth");
+        //System.out.println("账号："+username+"密码："+password);
         Consumer consumer = new Consumer(username,password);
         consumer = consumerService.findConsumerWithUsernameAndPassword(consumer);
-        System.out.println("登录结果: "+ consumer);
+        //System.out.println("登录结果: "+ consumer);
         //记录登录用户
         session.setAttribute("loginConsumer", consumer);
         return consumer != null  ? ResponseMessage.success() : ResponseMessage.error();
@@ -39,6 +39,7 @@ public class ConsumerController {
     public ResponseMessage register(@RequestParam String username, @RequestParam String password){
         Consumer consumer = new Consumer(username,password);
         String result = consumerService.register(consumer);
+        System.out.println("register: "+ consumer);
         //判断结果
         if (result.contains("注册成功")){
             return  ResponseMessage.success();

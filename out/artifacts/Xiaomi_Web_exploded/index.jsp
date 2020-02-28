@@ -17,7 +17,7 @@
                 href="#">协议规则</a> | <a href="#">下载app</a> | <a href="#">Select Location</a>
         </div>
         <div class="ntright">
-            <a href="#">登录</a> | <a href="#">注册</a> | <a href="#">消息通知</a>  <div><a href="/xiaomi/shopcart.jsp">购物车 (0)</a></div>
+            <a href="/xiaomi/login.jsp">登录</a> | <a href="/xiaomi/register.jsp">注册</a> | <a href="#">消息通知</a>  <div><a href="/xiaomi/shopcart.jsp">购物车 (0)</a></div>
         </div>
     </div>
 </div>

@@ -25,11 +25,12 @@ public class ConsumerService {
         //验证用户名是否存在
         ConsumerExample ce = new ConsumerExample();
         ce.createCriteria().andUsernameEqualTo(consumer.getUsername());
-
+        System.out.println(consumer+"add to database");
         List<Consumer> consumerList = consumerMapper.selectByExample(ce);
         if(consumerList.size() > 0){
             return "注册失败，用户名已存在";
         }
+        consumerMapper.insertSelective(consumer);
         return "注册成功";
     }
 }
